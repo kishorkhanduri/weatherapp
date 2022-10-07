@@ -17,11 +17,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Weather Forecast</h1>
+      <h1 className="main-heading">Weather Forecast</h1>
       <Input />
       <Button onClick={weather.fetchData} value="Search" />
       <Card />
-      <Button value="Refresh" />
+      <Button value="Refresh" onClick={()=>{
+        window. location. reload();
+      }} />
     </div>
   );
 }
