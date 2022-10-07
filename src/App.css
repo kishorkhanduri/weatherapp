@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+body{
+  background: url("./background.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 1; */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -41,7 +48,7 @@
 
 .card {
   padding: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(18, 68, 117, 0.2) 0px 8px 24px;
   border-radius: 20px;
 }
 
@@ -51,11 +58,32 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   font-size: 25px;
   margin: 10px;
+  padding: 1rem 1.2rem;
+  /* text-align: center; */
+  border: 1px solid #009688;
+  text-transform: capitalize;
 }
 .btn {
-  border: 0px;
-  padding: 10px 20px;
+
+  padding: 1rem 1.2rem;
   border-radius: 10px;
   margin: 5px;
   cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+  color: #009688;
+}
+
+.btn:hover{
+  -webkit-box-shadow: 10px 10px 31px -3px rgba(0,0,0,0.10);
+-moz-box-shadow: 10px 10px 31px -3px rgba(0,0,0,0.10);
+box-shadow: 10px 10px 31px -3px rgba(0,0,0,0.10);
+color: #095f56;
+}
+.main-heading{
+  font-size: 3rem;
+  color: black;
+  text-shadow: 4px 2px 6px rgb(71, 180, 173);
+  /* text-shadow: 4px 2px 6px rgba(117, 151, 149, 1); */
+
 }
